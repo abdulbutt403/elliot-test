@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Give+You+Glory|The+Girl+Next+Door|Gloria+Hallelujah|Indie+Flower);
+
+body {
+  color: #fcbe24;
+  margin: 0;
+  background: #eee;
+}
+#app {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#note-input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-note {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.note {
+  background-color: #f4f39e;
+  border-color: #dee184;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  position: relative;
+  color: #47576b;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  outline: none;
+  font-family: "The Girl Next Door", cursive;
+}
+
+.note button {
+  position: absolute;
+  top: 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.note .delete {
+  right: 0;
+  width: 20px;
+  background: red;
+}
+
+.note .edit {
+  right: 20px;
+  background: rgb(65, 255, 65);
+}
+
+.note > div{
+    outline: none;
+}
